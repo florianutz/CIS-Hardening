@@ -3,7 +3,7 @@
 - name: Include Ubuntu1604-CIS
   include_role:
     name: Ubuntu1604-CIS
-  when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "10.04"
+  when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "16.04"
 
 - name: Include RHEL7-CIS
   include_role:
