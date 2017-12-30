@@ -4,8 +4,12 @@
   include_role:
     name: Ubuntu1604-CIS
   when: ansible_distribution == "Ubuntu" and ansible_distribution_version == "16.04"
+  tags:
+      - always
 
 - name: Include RHEL7-CIS
   include_role:
     name: RHEL7-CIS
   when: ansible_os_family == "RedHat"
+  tags:
+      - always
